@@ -1,101 +1,133 @@
-# 1. definicion de una función simple
-def mifuncion():
-    print("hola desde una funcion")
 
-# 2. llamada a la funcion
-mifuncion()
 
-# 3. funcion con un argumento
-def mifuncionconnombre(fname):
+# Practicando funciones 1
+def myfunction():
+    print("hello from a function")
+
+myfunction()
+
+# Practicando funciones 2
+def myfunction():
+    print("hello from a function")
+
+myfunction()
+
+# Practicando funciones 3
+def myfunction(fname):
     print(fname + " refsnes")
 
-mifuncionconnombre("kevin")
-mifuncionconnombre("canelitas")
-mifuncionconnombre("santiago")
+myfunction("emil")
+myfunction("emil")
+myfunction("emil")
 
-# 4. funcion que espera dos argumentos
-def mifunciondosargumentos(fname, lname):
+# Practicando funciones 4
+def myfunction(fname, lname):
     print(fname + " " + lname)
 
-mifunciondosargumentos("lazo", "cuerda")
+myfunction("emil", "refsnes")
 
-# 5. llamada a funcion con menos argumentos
-# esto generara un error porque falta el segundo argumento
+# Practicando funciones 5
+def myfunction(fname, lname):
+    print(fname + " " + lname)
 
-# 6. funcion con argumentos variables
-def mifuncionconkids(*kids):
-    print("el hijo menor es " + kids[2])
+myfunction("emil")
 
-mifuncionconkids("", "La grandota", "cami")
+# Practicando funciones 6
+def myfunction(*kids):
+    print("the youngest child is " + kids[2])
 
-# 7. argumentos con sintaxis clave=valor
-def mifuncionconhijos(child3, child2, child1):
-    print("el hijo menor es " + child3)
+myfunction("emil", "tobias", "linus")
 
-mifuncionconhijos(child1="cristina", child2="Carlitos", child3="Kevinsito")
+# Practicando funciones 7
+def myfunction(child3, child2, child1):
+    print("the youngest child is " + child3)
 
-# 8. argumentos arbitrarios de palabras clave
-def mifuncionconkwargs(**kid):
-    print("su apellido es " + kid["lname"])
+myfunction(child1="emil", child2="tobias", child3="linus")
 
-mifuncionconkwargs(fname="Adrian", lname="Correa")
+# Practicando funciones 8
+def myfunction(**kid):
+    print("his last name is " + kid["lname"])
 
-# 9. valores por defecto en parametros
-def mifuncionconpais(pais="Peru York"):
-    print("soy de " + pais)
+myfunction(fname="tobias", lname="refsnes")
 
-mifuncionconpais("Brazil")
-mifuncionconpais()
-mifuncionconpais("España")
+# Practicando funciones 9
+def myfunction(country="sweden"):
+    print("i am from " + country)
 
-# 10. pasar una lista como argumento
-def mifuncionconlista(comida):
-    for x in comida:
+myfunction("india")
+myfunction()
+myfunction("brazil")
+
+# Practicando funciones 10
+def myfunction(food):
+    for x in food:
         print(x)
 
-frutas = ["piña", "cereza", "Sanida"]
-mifuncionconlista(frutas)
+fruits = ["apple", "banana", "cherry"]
+myfunction(fruits)
 
-# 11. devolver valores desde una funcion
-def mifuncionconretorno(x):
-    return x + 5
+# Practicando funciones 11
+def myfunction(x):
+    return x + 1
 
-print(mifuncionconretorno(3))
-print(mifuncionconretorno(5))
-print(mifuncionconretorno(9))
+print(myfunction(3))
+print(myfunction(5))
+print(myfunction(9))
 
-# 12. declaracion pass para funciones vacias
-def funcionvacia():
-    pass  # funcion sin contenido
+# Practicando funciones 12
+def myfunction():
+    pass
 
-# 13. argumentos solo posicionales
-def mifuncionposicional(x, /):
+# Practicando funciones 13
+def myfunction(x, /):
     print(x)
 
-mifuncionposicional(3)
-# mifuncionposicional(x=3)  # esto generara un error
+myfunction(3)
 
-# argumentos solo de palabra clave
-def mifuncionpalabraclave(*, x):
+# Practicando funciones 14
+def myfunction(x):
     print(x)
 
-mifuncionpalabraclave(x=3)
-# mifuncionpalabraclave(3)  # esto generara un error
+myfunction(x=3)
 
-# combinar argumentos posicionales y de palabra clave
-def mifuncioncombinada(a, b, /, *, c, d):
+# Practicando funciones 15
+def myfunction(x, /):
+    print(x)
+
+# myfunction(x=3)  # Esto causaría un error
+
+# Practicando funciones 16
+def myfunction(*, x):
+    print(x)
+
+myfunction(x=3)
+
+# Practicando funciones 17
+def myfunction(x):
+    print(x)
+
+myfunction(3)
+
+# Practicando funciones 18
+def myfunction(*, x):
+    print(x)
+
+# myfunction(3)  # Esto causaría un error
+
+# Practicando funciones 19
+def myfunction(a, b, /, *, c, d):
     print(a + b + c + d)
 
-mifuncioncombinada(5, 6, c=7, d=8)
+myfunction(5, 6, c=7, d=8)
 
-# 14. recursividad
-def sumarecursiva(k):
-    if k > 0:
-        resultado = k + sumarecursiva(k - 1)
-        print(resultado)
+# Practicando funciones 20
+def tri_recursion(k):
+    if(k > 0):
+        result = k + tri_recursion(k - 1)
+        print(result)
     else:
-        resultado = 0
-    return resultado
+        result = 0
+    return result
 
-print("\nresultados de la suma recursiva:")
-sumarecursiva(6)
+print("\n\nrecursion example results")
+tri_recursion(6)
