@@ -3,7 +3,7 @@ print(" ")
 
 # practicando funciones 3
 def myfunction(fname):
-    print(fname + " refsnes")  # imprime el nombre seguido de "refsnes"
-myfunction("emil")  # llama a la funcion con "emil"
-myfunction("emil")  # llama a la funcion nuevamente con "emil"
-myfunction("emil")  # llama a la funcion nuevamente con "emil"
+    print(fname + " Carrasco")  # imprime el nombre seguido de "Carrasco"
+myfunction("Santiago")  # llama a la funcion con "Santiago"
+myfunction("Santiago")  # llama a la funcion nuevamente con "Santiago"
+myfunction("Santiago")  # llama a la funcion nuevamente con "Santiago"
