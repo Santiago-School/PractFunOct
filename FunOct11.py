@@ -3,6 +3,6 @@ print(" ")
 # practicando funciones 11
 def myfunction(x):
     return x + 1  # devuelve el valor incrementado en 1
-print(myfunction(3))  # imprime 4
-print(myfunction(5))  # imprime 6
-print(myfunction(9))  # imprime 10
+print(myfunction(2))  # imprime 3
+print(myfunction(4))  # imprime 5
+print(myfunction(6))  # imprime 7

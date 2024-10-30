@@ -3,4 +3,4 @@ print(" ")
 # practicando funciones 17
 def myfunction(x):
     print(x)  # imprime el valor de x
-myfunction(3)  # llama a la función con 3
+myfunction(16)  # llama a la función con 16

@@ -3,4 +3,4 @@ print(" ")
 # practicando funciones 15
 def myfunction(x, /):
     print(x)  # imprime el valor de x
-# myfunction(x=3)  # esto causaría un error, ya que x no puede ser nombrado
+# esto causaría un error, ya que x no puede ser nombrado
